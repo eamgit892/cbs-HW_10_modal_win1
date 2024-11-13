@@ -4,13 +4,17 @@ import './App.css'
 import { ModalWind } from './components/ModalWind/ModalWind'
 
 function App() {
+
   const [modalState, setModalState] = useState(false)
+
   return (
     <div className='App'>
+      {/* {modalState && <ModalWind />} */}
+
+      <ModalWind call={modalState} onDestroy={() => setModalState(false)}/>
       
-      <ModalWind />
       <button onClick={() => {
-        setModalState(true)
+        setModalState(!modalState)
       }}>Open Modal
          
       </button>

@@ -1,0 +1,55 @@
+.modal {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal i {
+    color: rbg(100, 100, 100);
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.modal-content {
+    max-width: 450px;
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+.modal-content h1 {
+    text-align: center;
+}
+
+.btns button {
+    width: 90%;
+    margin: 0.2rem;
+    padding: 10px;
+}
+
+.accept:hover {
+    background-color: rgb(14, 71, 149);
+}
+.accept {
+    color: #fff;
+    background-color: darkblue;
+}
+
+.reject:hover {
+    background-color: darkred;
+}
+.reject {
+    color: #fff;
+    background-color: pink;
+}
+
+
+
