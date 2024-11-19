@@ -1,0 +1,8 @@
+.task-wrapper__task-list {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+.task-wrapper__task-list li {
+    text-align: left;
+}

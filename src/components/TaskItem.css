@@ -1,0 +1,45 @@
+.taskItem {
+    width: 550px;
+    height: fit-content;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.taskItem label {
+    width: 88%;
+    /* background-color: yellow; */
+    /* opacity: 0.2; */
+    line-height: 35px;
+}
+
+input:checked ~ span {
+    text-decoration: line-through;
+}
+
+.taskItem label span{
+    color: black;
+}
+
+.taskItem input {
+    margin: 0 1rem;
+}
+
+.taskItem__edit, .taskItem__delete {
+    --size: 25px;
+    width: var(--size);
+    height: var(--size);
+    align-self: center;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.taskItem__edit {
+    background-image: url(../assets/edit-icon.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
